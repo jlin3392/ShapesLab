@@ -1,21 +1,21 @@
 public class Rectangle extends Shape {
 
-    private int length;
+    private int height;
     private int width;
 
     public Rectangle(int length, int width) {
         super("Rectangle");
-        this.length = length;
+        this.height = length;
         this.width = width;
     }
 
     @Override
     public double getArea() {
-        return length * width;
+        return height * width;
     }
 
     @Override
     public double getPerimeter() {
-        return (length + width)*2;
+        return (height + width)*2;
     }
 }
