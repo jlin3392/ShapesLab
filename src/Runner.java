@@ -2,9 +2,9 @@ public class Runner
 {
     public static void main(String[] args)
     {
-        Shape shape1 = new Rectangle ();
-        Shape shape2 = new ETriangle();
-        Shape shape3 = new Circle();
+        Shape shape1 = new Rectangle (10, 5);
+        Shape shape2 = new ETriangle(12);
+        Shape shape3 = new Circle(5);
 
         Shape[] shapes = {shape1, shape2, shape3};
 
