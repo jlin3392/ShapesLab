@@ -20,7 +20,7 @@ public class IsoTriangle extends Shape
      */
     public double getArea()
     {
-        return (double)(base*height)/2;
+        return (base*height)/2;
     }
 
     @Override
@@ -29,6 +29,6 @@ public class IsoTriangle extends Shape
      */
     public double getPerimeter()
     {
-        return Math.sqrt(Math.pow(base*0.5, 2) + Math.pow(height, 2))*2 + base;
+        return  2*Math.sqrt(Math.pow(base*0.5, 2)+Math.pow(height, 2))+base;
     }
 }
