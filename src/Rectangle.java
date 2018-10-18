@@ -1,23 +1,32 @@
 public class Rectangle extends Shape {
 
-    //These fields define the parameters that the user will enter to calculate the area and perimeter of the rectangle.
     private double height;
     private double width;
 
-    //This constructor inherits the type field from Shape and defines it as Rectangle. The height and width are also set.
+    /**
+     * Defines the shape to be a rectangle and the values of the height and width
+     * @param height of the rectangle
+     * @param width of the rectangle
+     */
     public Rectangle(double height, double width) {
         super("Rectangle");
         this.height = height;
         this.width = width;
     }
 
-    //This method is the formula for how to find the area of the rectangle. It multiplies the length and width values inputted before.
+    /**
+     * Finds the area of the rectangle by multiplying the height by the width.
+     * @return the area of the rectangle
+     */
     @Override
     public double getArea() {
         return height * width;
     }
 
-    //This formula is the method for how to find the perimeter of the rectangle. It adds the height and width and multiplies that sum by 2.
+    /**
+     * Finds the perimeter of the rectangle by adding the height and width and doubling the sum.
+     * @return the perimeter of the rectangle
+     */
     @Override
     public double getPerimeter() {
         return (height + width)*2;
