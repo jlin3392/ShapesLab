@@ -3,7 +3,8 @@ public class Square extends Rectangle {
     private double side;
 
     public Square(double side) {
-        super
+        super(side, side);
+        this.side = side;
     }
 
     @Override
@@ -15,4 +16,5 @@ public class Square extends Rectangle {
     public double getPerimeter() {
         return side*4;
     }
+
 }
