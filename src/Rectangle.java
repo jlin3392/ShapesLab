@@ -8,7 +8,8 @@ public class Rectangle extends Shape {
      * @param height of the rectangle
      * @param width of the rectangle
      */
-    public Rectangle(double height, double width) {
+    public Rectangle(double height, double width)
+    {
         super("Rectangle");
         this.height = height;
         this.width = width;
@@ -19,7 +20,8 @@ public class Rectangle extends Shape {
      * @return the area of the rectangle
      */
     @Override
-    public double getArea() {
+    public double getArea()
+    {
         return height * width;
     }
 
@@ -28,7 +30,8 @@ public class Rectangle extends Shape {
      * @return the perimeter of the rectangle
      */
     @Override
-    public double getPerimeter() {
+    public double getPerimeter()
+    {
         return (height + width)*2;
     }
 }

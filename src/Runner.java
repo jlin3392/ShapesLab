@@ -8,7 +8,6 @@ public class Runner
         Shape shape4 = new IsoTriangle(10, 12);
         Shape shape5 = new Ellipse(6, 7);
 
-
         Shape[] shapes = {shape1, shape2, shape3, shape4, shape5};
 
         for (Shape cur : shapes)
